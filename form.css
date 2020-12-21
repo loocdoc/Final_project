@@ -1,0 +1,422 @@
+@font-face {
+    font-family: "small";
+    src: url("/resources/fonts/AvenirLTStd-Book.otf"); format:"opentype";
+}
+
+@font-face {
+    font-family: "medium";
+    src: url("/resources/fonts/AvenirLTStd-Medium.otf"); format:"opentype";
+}
+
+@font-face {
+    font-family: "heavy";
+    src: url("/resources/fonts/AvenirNextLTPro-Heavy.otf"); format:"opentype";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #141414;
+  }
+  
+
+  .main {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+  }
+
+  .header {
+      display: flex;
+      width: 98vw; 
+      align-items: center; 
+      flex-direction: column;
+      
+  }
+
+  .header-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 110px; 
+    background-color: #242424; 
+}
+
+  
+.menu {
+    width: 100px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: #E5C642;
+    font-size: 22px;
+    font-family: heavy;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.header-header form {
+    display: flex;
+    height: 40px;
+    align-items: center;
+      
+}
+
+.header-header form input {
+  width: 707px; 
+  height: 50px;
+  padding: 20px 18px;
+  border: none;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #303030;
+  background-image: url(/resources/icons/search-line.png);
+  background-repeat: no-repeat ;
+  background-position: 655px;
+  font-family: medium;
+  font-size: 16px;
+  outline: none; 
+  opacity: 0.5; 
+  
+}
+
+::placeholder {
+  color: #eeecec;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input, select, textarea{
+  color: #CCCCCC;
+}
+
+.user {
+    width: 100px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.user a {
+  color: #CCCCCC;
+  font-size: 14px;
+  font-family: medium;
+  text-decoration: none;
+  margin-right: 31px;
+
+}
+
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100vw; 
+}
+
+/* .img1 {
+  width: 30vw;
+  height: 100vh;  
+  background-image: url(/resources/img/Rectangle\ 56.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 10px 10px 50px #171717;
+  filter: brightness(10%) 
+} */
+
+.img1  {
+  filter: brightness(10%);
+}
+
+.form_fill {
+    display: flex;
+    flex-direction: column;
+    width: 463px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .form-title h1 {
+    display: flex;
+    font-size: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: heavy;
+  }
+  
+  .form-title h2 {
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    color: #CCCCCC;
+    margin-top: 50px;
+    font-family: medium;
+  }
+
+
+  .form_fill_head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+        
+  }
+
+  .social-1 {
+      position: relative;
+  }
+
+  .social-1 img {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      
+  }
+
+  .social-2 {
+    position: relative;
+}
+
+.social-2 img {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    
+}
+
+ 
+  .form_fill_head h2 {
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-top: 50px;
+    font-family: medium;
+    flex-grow: 5 ;
+    text-align: center;
+  }
+
+
+
+  .form_fill_head button {
+    width: 219px;
+    height: 56px;
+    background: #242424;
+    margin-top: 35px;
+    font-size: 16px;
+    font-family: medium;
+    text-align: center;
+    color: #CCCCCC;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+  }
+
+
+  
+  .form_fill form {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .form_fill form label {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: small;
+    text-align: left;
+    color: #CCCCCC;
+  }
+  
+  .form_fill form input {
+    height: 40px;
+    border-style: none none solid none;
+    outline: none;
+    background-color: #171717;
+    opacity: 60%;
+    
+  }
+
+  select {
+    margin-top: 15px;
+    height: 40px;
+    border-style: none none solid none;
+    background-color: #171717;
+ 
+  }
+  
+  .form_fill form button {
+    width: 463px;
+    height: 60px;
+    border-radius: 12px;
+    background: #E5C642;
+    margin-top: 50px;
+    font-size: 14px;
+    font-family: medium;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .terms {
+      font-family: small;
+      margin-top: 69px;
+      font-size: 16px;
+      color: #CCCCCC;
+  }
+
+  .terms a {
+      color: #E5C642;
+      margin-left: 20px;
+  }
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 305px;
+    background: #242424;
+    margin-top: 30px;
+    
+}
+
+.footer a:hover {
+  color: #E5C642;
+}
+
+
+.footer-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer span {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: medium;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;    
+}
+
+.first-section a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #CCCCCC; 
+    font-size: 14px;
+    font-family: medium; 
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+
+}
+
+.second-section a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #CCCCCC; 
+    font-size: 14px;
+    font-family: medium; 
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.third-section a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #CCCCCC; 
+    font-size: 14px;
+    font-family: medium; 
+}
+
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.fourth-section a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 14px;
+    font-family: medium; 
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.help a {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 14px;
+    font-family: medium; 
+}
+
+.friend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.friend a {
+    text-decoration: none;
+    color: #CCCCCC; 
+    font-size: 14px;
+    font-family: medium;  
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
