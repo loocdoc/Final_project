@@ -13,29 +13,32 @@
     src: url("/resources/fonts/AvenirNextLTPro-Heavy.otf"); format:"opentype";
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
-    background-color: #000000;
+    background-color: #171717;
   }
   
   .background {
       position: absolute;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0.3, 0, 0, 0.9) ), url(/resources/img/Rectangle\ 10.jpg);
+      background-image: linear-gradient( #242424 0%, rgba(47, 47, 47, 0.47) 51.72%, #1e1e1e 85.71%, #171717 100%), url(/resources/img/Rectangle\ 10.jpg);
       background-repeat: no-repeat;
       filter: blur(1px);
       -webkit-filter: blur(1px);
       width: 100vw;
       height: 80vh;  
       z-index: -1;
-      box-shadow: inset 0px -20px 20px 5px #000000;
+      
 
 
   }
@@ -69,9 +72,9 @@ body {
 
   .header-header {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      width: 100vw;
+      width: 80%;
       height: 50px; 
       margin-top: 30px;
       
@@ -247,6 +250,105 @@ input, select, textarea{
     color:#E5C642;
   }
 
+
+  
+  @media screen and (max-width: 1675px) {
+      .card-1:last-child {
+          display: none;
+          
+      }
+
+      .most {
+          width: 60%;
+      }
+
+  }
+
+  @media screen and (max-width: 1475px) {
+    .card-1{
+        width: 40%;
+        height: 50%;
+  
+    }
+
+    .most {
+        width: 55%;
+    }
+
+    form input {
+        width: 500px;
+
+    }
+
+ 
+
+}
+
+@media screen and (max-width: 1100px) {
+    .card-1 {
+        width: 80%;
+        height: 80%;
+    }
+
+
+    .card-1:nth-last-child(2) {
+        display: none;
+      
+    }
+
+    .mtext p {
+        font-size: 10px;
+    }
+
+    .most-filter span {
+        font-size: 14px;
+    }
+
+    form input {
+        width: 300px;
+
+    }
+   
+}
+
+
+@media screen and (max-width: 860px) {
+    .slide {
+        display: none;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    
+    
+
+}
+
+@media screen and (max-width: 650px) {
+    
+    form input {
+        display: none;
+
+    }
+
+    .most {
+        width: 100%;
+
+    }
+
+    .most-filter-time {
+        display: none;
+    }
+
+
+
+}
+
+
+   
+
 .most-movies {
     display: flex;
     width: 80%;
@@ -254,12 +356,43 @@ input, select, textarea{
     
 }
 
-.card {
+.card-1 {
     display: flex;
     position: relative;
     flex-direction: column;
     cursor: pointer;
-        
+}
+
+.card-1:hover > img {
+    opacity: 50%;
+}
+.card-1:hover > .info {
+    display: flex;   
+} 
+
+.card-1:hover > .hover {
+    display: flex;
+     
+} 
+
+.card-1 p {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: medium;
+    margin-top:10px ;
+}
+
+.card-1 p:last-child {
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    cursor: pointer;     
 }
 
 .card:hover > img {
@@ -273,10 +406,21 @@ input, select, textarea{
     left: 120px;
 }
 
+.info {
+    position: absolute;
+    display: none;
+    bottom: 30px;
+    right: 10px;
+}
+
 
 .card:hover > .hover {
     display: flex;
      
+} 
+
+.card:hover > .info {
+    display: flex;   
 } 
 
 
@@ -298,7 +442,6 @@ input, select, textarea{
     flex-wrap: wrap;
     position: relative;
     width: 80%;
-    height: 357px;
     margin-top: 90px;
 }
 
@@ -312,7 +455,7 @@ input, select, textarea{
 .duration {
     width: 161px;
     position: absolute;
-    bottom: 83px;
+    bottom: 65px;
     left: 0;
 }
 
@@ -327,7 +470,6 @@ input, select, textarea{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 650px;
     margin-top: 90px;
 }
 
@@ -359,7 +501,6 @@ input, select, textarea{
     position: relative;
     flex-wrap: wrap;
     width: 80%;
-    height: 357px;
     margin-top: 90px;
   }
 
@@ -380,7 +521,6 @@ input, select, textarea{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 217px;
     margin-top: 90px;
 }
 
@@ -393,6 +533,7 @@ input, select, textarea{
 
 .col-movies {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
 

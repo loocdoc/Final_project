@@ -21,7 +21,16 @@
 
 body {
     margin: 0;
-    background-color: #141414;
+    background-color: #171717;
+
+  }
+
+  @media screen and (max-width: 1475px) {
+    form input {
+      width: 500px;
+
+  }
+
   }
   
 
@@ -114,9 +123,7 @@ input, select, textarea{
   font-family: medium;
   text-decoration: none;
   margin-right: 31px;
-
 }
-
 
   .content {
     display: flex;
@@ -131,20 +138,22 @@ input, select, textarea{
     width: 100vw; 
 }
 
-/* .img1 {
-  width: 30vw;
-  height: 100vh;  
-  background-image: url(/resources/img/Rectangle\ 56.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: inset 10px 10px 50px #171717;
-  filter: brightness(10%) 
-} */
 
 .img1  {
-  filter: brightness(10%);
+  background: linear-gradient(#171717 0%, rgb(23 23 23 / 83%) 51.72%, #171717 85.71%, #171717 100%), url(./resources/img/Rectangle\ 56.jpg) center/cover no-repeat;
+  z-index: 1;
+  width: 33%;
+  height: 100vh;  
+  
 }
 
+.img2 {
+  background: linear-gradient(#171717 0%, rgb(23 23 23 / 83%) 51.72%, #171717 85.71%, #171717 100%), url(./resources/img/Rectangle\ 57.jpg) center/cover no-repeat;
+  z-index: 1;
+  width: 33%;
+  height: 100vh;
+
+}
 .form_fill {
     display: flex;
     flex-direction: column;
