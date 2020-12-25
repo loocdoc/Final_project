@@ -322,6 +322,8 @@ input, select, textarea{
     }
 
     
+
+    
     
 
 }
@@ -450,10 +452,36 @@ input, select, textarea{
     color: #FFFFFF;
     font-size: 22px;
     font-family: medium;
+    margin-bottom: 30px;
 }
 
 .duration {
     width: 161px;
+    height: 6px;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+
+.duration-1 {
+    width: 70px;
+    height: 6px;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+
+.duration-2 {
+    width: 310px;
+    height: 6px;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+
+.duration-3 {
+    width: 90px;
+    height: 6px;
     position: absolute;
     bottom: 65px;
     left: 0;
@@ -478,6 +506,7 @@ input, select, textarea{
     color: #FFFFFF;
     font-size: 22px;
     font-family: medium;
+    margin-bottom: 30px;
 }
 
 .view-all {
@@ -515,6 +544,7 @@ input, select, textarea{
     color: #FFFFFF;
     font-size: 22px;
     font-family: medium;
+    margin-bottom: 30px;
 }
 
 .collection {
@@ -529,6 +559,7 @@ input, select, textarea{
     color: #FFFFFF;
     font-size: 22px;
     font-family: medium;
+    margin-bottom: 30px;
 }
 
 .col-movies {
