@@ -1,6 +1,6 @@
-const form = document.querySelector(".fill");
 
-const persons = [];
+const user = [];
+const form = document.querySelector(".fill");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -8,12 +8,12 @@ form.addEventListener("submit", (e) => {
     let email = document.getElementById("input_mail");
     let country = document.getElementById("country");
 
-    let person = {
+    let user = {
         name: name.value,
         email: email.value,
         country: country.value,
     };
 
-    persons.push(person);
-    console.log(persons);
+    persons.push(user);
+    console.log(user);
 });
