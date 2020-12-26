@@ -1,16 +1,16 @@
 const arr = [
     { title: 'Avengers', year: '2012', img: './resources/img/Rectangle 141.jpg', },
-    { title: 'Avengers', year: '2012', img: './resources/img/Rectangle 141.jpg', },
-    { title: 'Avengers', year: '2012', img: './resources/img/Rectangle 141.jpg', },
-    { title: 'Avengers', year: '2012', img: './resources/img/Rectangle 141.jpg', },
+    { title: 'Walk of Shame', year: '2014', img: './resources/img/Rectangle 151.jpg', },
+    { title: 'Boss Level', year: '2020', img: './resources/img/Rectangle 161.jpg', },
+    { title: 'Unhiged', year: '2020', img: './resources/img/Rectangle 30.jpg', },
 ]
 
 function handleCardsrender(cards) {
-    const cardsContainer = document.getElementById('.movies')
+    const cardsContainer = document.getElementById('movies')
     for (let i = 0; i < cards.length; i++) {
         const currentCard = cards[i]
         const createCard = document.createElement('div')
-        createCard.classlist.add('card')
+        createCard.className = 'card'
         createCard.innerHTML =
 
             `
