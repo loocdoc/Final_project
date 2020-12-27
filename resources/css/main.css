@@ -394,7 +394,8 @@ input, select, textarea{
     display: flex;
     position: relative;
     flex-direction: column;
-    cursor: pointer;     
+    cursor: pointer;
+    margin-top: 20px;     
 }
 
 .card:hover > img {

@@ -133,7 +133,7 @@ input, select, textarea{
 
 
 .img1  {
-  background: linear-gradient(#171717 0%, rgb(23 23 23 / 83%) 51.72%, #171717 85.71%, #171717 100%), url(./resources/img/Rectangle\ 56.jpg) center/cover no-repeat;
+  background: linear-gradient(#171717 0%, rgb(23 23 23 / 83%) 51.72%, #171717 85.71%, #171717 100%), url(/resources/img/Rectangle\ 56.jpg) center/cover no-repeat;
   z-index: 1;
   width: 33%;
   height: 100vh;  
@@ -141,7 +141,7 @@ input, select, textarea{
 }
 
 .img2 {
-  background: linear-gradient(#171717 0%, rgb(23 23 23 / 83%) 51.72%, #171717 85.71%, #171717 100%), url(./resources/img/Rectangle\ 57.jpg) center/cover no-repeat;
+  background: linear-gradient(#171717 0%, rgb(23 23 23 / 83%) 51.72%, #171717 85.71%, #171717 100%), url(/resources/img/Rectangle\ 57.jpg) center/cover no-repeat;
   z-index: 1;
   width: 33%;
   height: 100vh;
