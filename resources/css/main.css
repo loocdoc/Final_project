@@ -31,7 +31,7 @@ body {
       position: absolute;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient( #242424 0%, rgba(47, 47, 47, 0.47) 51.72%, #1e1e1e 85.71%, #171717 100%), url(/resources/img/Rectangle\ 10.jpg);
+      background-image: linear-gradient( #242424 0%, rgba(47, 47, 47, 0.47) 51.72%, #1e1e1e 85.71%, #171717 100%), url(../img/Rectangle\ 10.jpg);
       background-repeat: no-repeat;
       filter: blur(1px);
       -webkit-filter: blur(1px);
@@ -252,102 +252,7 @@ input, select, textarea{
 
 
   
-  @media screen and (max-width: 1675px) {
-      .card-1:last-child {
-          display: none;
-          
-      }
-
-      .most {
-          width: 60%;
-      }
-
-  }
-
-  @media screen and (max-width: 1475px) {
-    .card-1{
-        width: 40%;
-        height: 50%;
   
-    }
-
-    .most {
-        width: 55%;
-    }
-
-    form input {
-        width: 500px;
-
-    }
-
- 
-
-}
-
-@media screen and (max-width: 1100px) {
-    .card-1 {
-        width: 80%;
-        height: 80%;
-    }
-
-
-    .card-1:nth-last-child(2) {
-        display: none;
-      
-    }
-
-    .mtext p {
-        font-size: 10px;
-    }
-
-    .most-filter span {
-        font-size: 14px;
-    }
-
-    form input {
-        width: 300px;
-
-    }
-   
-}
-
-
-@media screen and (max-width: 860px) {
-    .slide {
-        display: none;
-    }
-
-    .content {
-        margin-top: 100px;
-    }
-
-    
-
-    
-    
-
-}
-
-@media screen and (max-width: 650px) {
-    
-    form input {
-        display: none;
-
-    }
-
-    .most {
-        width: 100%;
-
-    }
-
-    .most-filter-time {
-        display: none;
-    }
-
-
-
-}
-
 
    
 
@@ -714,6 +619,117 @@ input, select, textarea{
 }
 
 
+@media screen and (max-width: 1675px) {
+    .card-1:last-child {
+        display: none;
+        
+    }
+
+    .most {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 1475px) {
+  .card-1{
+      width: 40%;
+      height: 50%;
+
+  }
+
+  .most {
+      width: 55%;
+  }
+
+  form input {
+      width: 500px;
+
+  }
+
+
+
+}
+
+@media screen and (max-width: 1100px) {
+  .card-1 {
+      width: 80%;
+      height: 80%;
+  }
+
+
+  .card-1:nth-last-child(2) {
+      display: none;
+    
+  }
+
+  .mtext p {
+      font-size: 10px;
+  }
+
+  .most-filter span {
+      font-size: 14px;
+  }
+
+  form input {
+      width: 300px;
+
+  }
+ 
+}
+
+
+@media screen and (max-width: 860px) {
+  .slide {
+      display: none;
+  }
+
+  .content {
+      margin-top: 100px;
+  }
+
+  .footer {
+      display: none;
+  }
+
+  
+
+  
+  
+
+}
+
+@media screen and (max-width: 650px) {
+  
+  form input {
+      display: none;
+
+  }
+
+  .most {
+      width: 100%;
+
+  }
+
+  .most-filter-time {
+      display: none;
+  }
+
+  .movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+}
 
 
 

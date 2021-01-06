@@ -1,4 +1,4 @@
-const arrNew = [
+const newMoviesArr = [
     { title: 'Awoken', year: '2019', img: './resources/img/Rectangle 142.jpg', },
     { title: 'Words on Bathroom Walls', year: '2020', img: './resources/img/Rectangle 152.jpg', },
     { title: 'Boss Level', year: '2020', img: './resources/img/Rectangle 161.jpg', },
@@ -9,18 +9,28 @@ const arrNew = [
     { title: 'Happiest Season', year: '2020', img: './resources/img/Rectangle 28.jpg', },
 ]
 
-function handleCardsrender(cards) {
-    const cardsContainer = document.getElementById('newmovies')
-    for (let i = 0; i < cards.length; i++) {
-        const currentCard = cards[i]
-        const createCard = document.createElement('div')
-        createCard.className = 'card'
-        createCard.innerHTML =
 
-            `
-                        <img src="${currentCard.img}" alt="">
-                        <p>${currentCard.title}</p>
-                        <p>${currentCard.year}</p>
+
+const viewAllm = document.getElementById("newmoviesall");
+const nmcardrender = document.querySelector(".nmovies");
+
+let countM = 0;
+
+const newMovies = (counter) => {
+    for (let i = counter; i <= counter + 4; i++) {
+        if (i === counter + 4) {
+            countM = counter + 4;
+            break;
+        }
+
+        const currentItem = newMoviesArr[i];
+        const nmItem = document.createElement("div");
+        nmItem.className = 'card'
+
+        nmItem.innerHTML = `
+                      <img src="${currentItem.img}" alt="">
+                        <p>${currentItem.title}</p>
+                        <p>${currentItem.year}</p>
                         <div class="hover">
                             <img src="./resources/icons/Group 10.png">
                         </div>
@@ -28,11 +38,16 @@ function handleCardsrender(cards) {
                             <img src="./resources/icons/add-circle-fill.png">
                             <img src="./resources/icons/information-fill.png">
                         </div>
+          
+          
+        `;
 
-
-        `
-        cardsContainer.appendChild(createCard)
+        nmcardrender.appendChild(nmItem);
     }
-}
+};
 
-handleCardsrender(arrNew)
+newMovies(countM);
+
+viewAllm.addEventListener("click", () => {
+    newMovies(countM);
+});
